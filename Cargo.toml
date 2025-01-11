@@ -1,16 +1,10 @@
 [package]
-name = "rustystm32"
+name = "rusty-stm32"
 version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+stm32f4xx-hal = { version = "0.22.1", features = ["stm32f401"] }
 cortex-m-rt = "0.7.5"
-panic-halt = "1.0.0"
 cortex-m = "0.7.3"
-
-[default]
-chip = "STM32F401RE" # Nombre exacto del microcontrolador
-
-[flashing]
-halt_afterwards = false
-reset_after_flashing = true
+panic-halt = "0.2.0"
