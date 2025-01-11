@@ -13,4 +13,4 @@ chip = "STM32F401RE" # Nombre exacto del microcontrolador
 
 [flashing]
 halt_afterwards = false
-reset_after_flashing = false
+reset_after_flashing = true
